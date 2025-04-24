@@ -55,7 +55,7 @@ RSpec.describe PandaDoc::DocumentSection do
 
     before do
       allow(PandaDoc::ApiClient).to receive(:request)
-        .with(:post, "/documents/#{document_uuid}/sections/upload", name: "Foo")
+        .with(:post, "/documents/#{document_uuid}/sections/uploads", name: "Foo")
         .and_return(response)
     end
 
